@@ -1,0 +1,45 @@
+{{ partial "header.html" . }}
+{{ partial "nagivation.html" . }}
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+      <div class="card">
+        <div class="card-image">
+          <img src="http://placehold.it/600x300.jpg">
+          <span class="card-title">Card Title</span>
+        </div>
+        <div class="card-content">
+          <p>Estimation temps de lecture : {{ .ReadingTime }} min.</p>
+          <p>{{ .Content }}</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- TODO : If comments enable -->
+<div class="disqus">
+</div>
+</div>
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+  <a class="btn-floating btn-large red">
+    <i class="material-icons">share</i>
+  </a>
+  <ul>
+    <li>
+      <a class="btn-floating white" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;">
+        <span class="icon icon-github">
+        </span>
+      </a>
+    </li>
+    <li>
+      <a class="btn-floating white" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;">
+        <span class="icon icon-facebook">
+        </span>
+      </a>
+    </li>
+  </ul>
+</div>
+{{ partial "footer.html" . }}

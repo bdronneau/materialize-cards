@@ -1,0 +1,35 @@
+<div class="col l4 m6 s12">
+  <div class="card hoverable">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="{{.Params.image}}">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <a href="{{ .Permalink }}"><i class="material-icons icon-middle right">pageview</i></a>
+        <i class="material-icons icon-middle right">visibility</i>
+      </span>
+      <p>
+        <i class="material-icons icon-middle">perm_identity</i> {{ .Params.author }}
+      </p>
+      <p>
+        <i class="material-icons icon-middle">query_builder</i> {{ .Date.Format "02 Jan 2006" }}
+      </p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">{{ .Title }}<i class="material-icons right">close</i></span>
+      <p>{{ .Summary }}</p>
+      <p></p>
+      <p>
+        <a href="{{ .Permalink }}"><i class="material-icons icon-middle">pageview</i> Lire</a>
+      </p>
+      <p>
+        {{ range .Params.tags }}
+            <div class="chip">
+                <a href="tags/{{ . | urlize }}">{{ . }}</a>
+            </div>
+        {{ end }}
+      </p>
+    </div>
+  </div>
+</div>
