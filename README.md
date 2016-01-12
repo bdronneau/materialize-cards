@@ -7,6 +7,6 @@ Theme for [Hugo](https://gohugo.io/) base on [materializecss](http://materialize
 ```bash
 $ mkdir themes
 $ cd themes
-$ git clone https://github.com/bdronneau/Materialize-cards.git base16
+$ git clone https://github.com/bdronneau/Materialize-cards.git
 ```
 See [the Hugo documentation](http://gohugo.io/themes/installing/) for more information.
