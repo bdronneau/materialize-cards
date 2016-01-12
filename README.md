@@ -1,2 +1,3 @@
-# materialize-cards
-Theme for Hugo base on materializecss
+# Materialize-cards
+
+Theme for [Hugo](https://gohugo.io/) base on [materializecss](http://materializecss.com/)

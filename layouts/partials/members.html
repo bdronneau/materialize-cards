@@ -1,0 +1,55 @@
+{{ range . }}
+<a name="{{ .id }}"></a>
+<div class="col s12">
+  <div class="card">
+    <br />
+    <div class="center-align">
+      <!-- TODO : go in CSS -->
+      <img class="circle responsive-img" style="height:150px;" src="http://placehold.it/150x150.jpg">
+      <p>
+        <h2 class="card-title">
+          {{ .name }}
+        </h2>
+      </p>
+    </div>
+    <div class="card-content">
+      <div class="center-align">
+        <p>
+          {{ .description }}
+        </p>
+      </div>
+    </div>
+    <div class="card-action">
+      {{ if .github }}
+      <a href="https://github.com/{{ .github }}" target="_blank">
+        <span class="icon icon-github">
+          Github
+        </span>
+      </a>
+      {{ end }}
+      {{ if .twitter }}
+      <a href="https://twitter.com/{{ .twitter }}" target="_blank">
+        <span class="icon icon-twitter">
+          Twitter
+        </span>
+      </a>
+      {{ end }}
+      {{ if .linkedin }}
+      <a href="https://fr.linkedin.com/in/{{ .linkedin }}" target="_blank">
+        <span class="icon icon-linkedin">
+          Linkedin
+        </span>
+      </a>
+      {{ end }}
+      {{ if .stackoverflow }}
+      <a href="https://stackexchange.com/users/{{ .stackoverflow }}" target="_blank">
+        <span class="icon icon-linkedin">
+          Stackoverflow
+        </span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+{{ end }}
