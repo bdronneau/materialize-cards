@@ -1,0 +1,43 @@
+{
+  "name": "materialize-cards",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Materializecss for Hugo based on cards presentation",
+  "main": "layouts/index.html",
+  "scripts": {
+    "tests:syntax": "npm run tests:jshint && npm run tests:jscs && npm run tests:csslint",
+    "tests:jshint": "jshint .",
+    "tests:jscs": "jscs .",
+    "tests:csslint": "csslint . --exclude-list=node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdronneau/materialize-cards.git"
+  },
+  "author": "P-Team",
+  "contributors": [
+    {
+      "name": "Bastien Dronneau",
+      "email": "basti1.dr@gmail.com",
+      "url": "https://bastien.dronneau.fr/"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/bdronneau/materialize-cards/issues"
+  },
+  "keywords": [
+    "hugo",
+    "materializecss",
+    "cards"
+  ],
+  "homepage": "https://github.com/bdronneau/materialize-cards#readme",
+  "engines": {
+    "node": "4.2.x"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "csscs": "0.0.0",
+    "jscs": "^2.5.1",
+    "jshint": "^2.8.0"
+  }
+}
