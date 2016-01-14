@@ -1,4 +1,4 @@
-# Materialize-cards
+# Materialize-cards [![Build Status](https://travis-ci.org/bdronneau/materialize-cards.svg?branch=master)](https://travis-ci.org/bdronneau/materialize-cards) [![bitHound Overall Score](https://www.bithound.io/github/bdronneau/materialize-cards/badges/score.svg)](https://www.bithound.io/github/bdronneau/materialize-cards) [![bitHound Dev Dependencies](https://www.bithound.io/github/bdronneau/materialize-cards/badges/devDependencies.svg)](https://www.bithound.io/github/bdronneau/materialize-cards/master/dependencies/npm)
 
 Theme for [Hugo](https://gohugo.io/) base on [materializecss](http://materializecss.com/)
 
