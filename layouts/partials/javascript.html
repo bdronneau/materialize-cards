@@ -16,6 +16,9 @@
   hljs.initHighlightingOnLoad();
 
   function initComment() {
+    if (window.location.hostname == "localhost")
+        return;
+
     var d = document, s = d.createElement('script');
     s.src = 'https://ingloriouscoders.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
