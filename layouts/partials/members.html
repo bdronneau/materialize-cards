@@ -27,22 +27,22 @@
         </span>
       </a>
       {{ end }}
-      {{ if .twitter }}
-      <a href="https://twitter.com/{{ .twitter }}" target="_blank">
+      {{ with .twitter }}
+      <a href="https://twitter.com/{{ . }}" target="_blank">
         <span class="icon icon-twitter">
           Twitter
         </span>
       </a>
       {{ end }}
-      {{ if .linkedin }}
-      <a href="https://fr.linkedin.com/in/{{ .linkedin }}" target="_blank">
+      {{ with .linkedin }}
+      <a href="https://fr.linkedin.com/in/{{ . }}" target="_blank">
         <span class="icon icon-linkedin">
           Linkedin
         </span>
       </a>
       {{ end }}
-      {{ if .stackoverflow }}
-      <a href="https://stackexchange.com/users/{{ .stackoverflow }}" target="_blank">
+      {{ with .stackoverflow }}
+      <a href="https://stackexchange.com/users/{{ . }}" target="_blank">
         <span class="icon icon-linkedin">
           Stackoverflow
         </span>
