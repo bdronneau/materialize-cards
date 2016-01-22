@@ -1,5 +1,5 @@
 {{ partial "header.html" . }}
-{{ partial "nagivation.html" . }}
+{{ partial "navigation.html" . }}
 <div class="container">
   <div id="masonry-container-index" class="row">
     {{ $paginator := .Paginate (where .Data.Pages "Type" "posts") }}
