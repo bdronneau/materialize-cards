@@ -2,6 +2,7 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+<script id="dsq-count-scr" src="https://ingloriouscoders.disqus.com/count.js" async></script>
 
 <script type="text/javascript">
   $("#button-menu-left").sideNav();
@@ -13,4 +14,14 @@
   });
 
   hljs.initHighlightingOnLoad();
+
+  function initComment() {
+    if (window.location.hostname == "localhost")
+        return;
+
+    var d = document, s = d.createElement('script');
+    s.src = 'https://ingloriouscoders.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  }
 </script>

@@ -17,10 +17,18 @@
         </div>
       </div>
     </div>
+    <div class="col s12">
+      {{ if and ( .Params.comment ) (.Site.Data.comments.enable) }}
+      <h5><a href="{{ .Permalink }}#disqus_thread">Commentaires</a></h5>
+      <div class="disqus" id="disqus_thread">
+      <a class="waves-effect waves-light btn" onclick="initComment()"><i class="material-icons left">chat_bubble_outline</i>Charger les commentaires</a>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+      {{ else }}
+      <h5>Commentaires désactivés</h5>
+      {{ end }}
+    </div>
   </div>
 </div>
-<!-- TODO : If comments enable -->
-<div class="disqus">
 </div>
 </div>
 <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
