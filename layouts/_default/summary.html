@@ -28,7 +28,7 @@
       <p>
         {{ range .Params.tags }}
             <div class="chip">
-                <a href="tags/{{ . | urlize }}">{{ . }}</a>
+                <a href="/tags/{{ . | urlize }}">{{ . }}</a>
             </div>
         {{ end }}
       </p>
