@@ -23,28 +23,28 @@
       {{ if .github }}
       <a href="https://github.com/{{ .github }}" target="_blank">
         <span class="icon icon-github">
-          Github
+          {{ partial "icons/github.svg" . }} Github
         </span>
       </a>
       {{ end }}
       {{ with .twitter }}
       <a href="https://twitter.com/{{ . }}" target="_blank">
         <span class="icon icon-twitter">
-          Twitter
+          {{ partial "icons/twitter.svg" . }} Twitter
         </span>
       </a>
       {{ end }}
       {{ with .linkedin }}
       <a href="https://fr.linkedin.com/in/{{ . }}" target="_blank">
         <span class="icon icon-linkedin">
-          Linkedin
+          {{ partial "icons/linkedin.svg" . }} Linkedin
         </span>
       </a>
       {{ end }}
       {{ with .stackoverflow }}
       <a href="https://stackexchange.com/users/{{ . }}" target="_blank">
         <span class="icon icon-linkedin">
-          Stackoverflow
+          {{ partial "icons/stackoverflow.svg" . }} Stackoverflow
         </span>
       </a>
       {{ end }}

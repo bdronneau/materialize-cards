@@ -16,6 +16,13 @@ main {
   vertical-align: middle;
 }
 
+.icon > svg {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+
 /**
  * Override mmaterializecss theme
  */
