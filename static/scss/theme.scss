@@ -1,0 +1,43 @@
+/**
+ * Theme materialize-cards
+ */
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.icon-middle {
+  vertical-align: middle;
+}
+
+.icon > svg {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+
+/**
+ * Override mmaterializecss theme
+ */
+
+nav ul a:hover {
+  background-color: #000;
+  background-color: rgba(0,0,0,0);
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 90%;
+  }
+}
+
+.card .card-title {
+  font-size: 20px;
+}
