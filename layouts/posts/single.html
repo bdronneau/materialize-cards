@@ -37,14 +37,39 @@
   </a>
   <ul>
     <li>
-      <a class="btn-floating white" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;">
-        <span class="icon icon-github">
+      <a
+        href="https://twitter.com/intent/tweet?status={{ .Title }}+via {{ .Permalink }}"
+        class="btn-floating white"
+        style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"
+        onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+      >
+        <span class="icon icon-twitter">
+          {{ partial "icons/twitter/tw.svg" . }}
         </span>
       </a>
     </li>
     <li>
-      <a class="btn-floating white" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;">
+      <a
+        href="http://www.facebook.com/share.php?u={{ .Permalink }}&title={{ .Title }}"
+        class="btn-floating white"
+        style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"
+        onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+      >
         <span class="icon icon-facebook">
+          {{ partial "icons/facebook/fb.svg" . }}
+        </span>
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="https://plus.google.com/share?url={{ .Permalink }}"
+        class="btn-floating white"
+        style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"
+        onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+      >
+        <span class="icon icon-googleplus">
+          {{ partial "icons/googleplus/gp.svg" . }}
         </span>
       </a>
     </li>
