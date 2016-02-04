@@ -17,6 +17,16 @@
 
   initGoogleAnalytics();
 
+  if(typeof localStorage!='undefined') {
+    if('okay-cookie' in localStorage) {
+      console.log("Cookie usage allow");
+    } else {
+      $('#modal-cookies').openModal();
+    }
+  } else {
+    console.error("localStorage n'est pas supporté");
+  }
+
   function initGoogleAnalytics () {
     if (window.location.hostname == "localhost")
       return;
@@ -38,5 +48,13 @@
     s.src = 'https://ingloriouscoders.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
+  }
+
+  function agreeCookies() {
+    if(typeof localStorage!='undefined') {
+      localStorage.setItem('okay-cookie', true);
+    } else {
+      console.error("localStorage n'est pas supporté");
+    }
   }
 </script>
