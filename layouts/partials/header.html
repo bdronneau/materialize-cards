@@ -42,6 +42,46 @@
     <meta name="msapplication-TileImage" content="{{ .Site.BaseURL }}/images/favicons/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- Meta socials-->
+    {{ with .Description }}<meta name="description" content="{{ . }}" />{{ end }}
+
+    <!-- Schema.org markup for Google+ -->
+    {{ if .Title }}
+    <meta itemprop="name" content="{{ .Site.Title }}">
+    {{ else }}
+    <meta itemprop="name" content="{{ .Site.Title }}">
+    <title>{{ .Site.Title }}</title>
+    {{ end }}
+    {{ with .Description }}<meta itemprop="description" content="{{ . }}" />{{ end }}
+    <meta itemprop="image" content="{{ .Site.BaseURL }}/images/stash.png">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="{{ .Site.BaseURL }}/images/stash.png">
+    <meta name="twitter:site" content="@stashourcode">
+    {{ if .Title }}
+    <meta name="twitter:title" content="{{ .Site.Title }}">
+    {{ else }}
+    <meta name="twitter:title" content="{{ .Site.Title }}">
+    <title>{{ .Site.Title }}</title>
+    {{ end }}
+    {{ with .Description }}<meta name="twitter:description" content="{{ . }}" />{{ end }}
+    {{ with .Params.Author }}<meta name="twitter:creator" content="{{ . }}" />{{ end }}
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image:src" content="{{ .Site.BaseURL }}/images/stash.png">
+
+    <!-- Open Graph data -->
+    {{ if .Title }}<meta name="og:title" content="{{ .Site.Title }}">
+    {{ else }}
+    <meta name="og:title" content="{{ .Site.Title }}">
+    <title>{{ .Site.Title }}</title>
+    {{ end }}
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:image" content="{{ .Site.BaseURL }}/images/stash.png">
+    {{ with .Description }}<meta name="og:description" content="{{ . }}" />{{ end }}
+    <meta property="og:description" content="Description Here" />
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
+    {{ with .Params.tags }}<meta property="article:tag" content="{{ delimit . " " }}" />{{ end }}
+    <!-- End Meta socials -->
   </head>
 
 <body>
