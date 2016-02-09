@@ -8,5 +8,5 @@ features = ["cards", "tags", "materialize design", "disqus", "google analytics"]
 min_version = 0.1
 
 [author]
-  name = ""
-  homepage = ""
+  name = "Bastien Dronneau"
+  homepage = "https://bastien.dronneau.fr/"
