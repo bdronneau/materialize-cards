@@ -4,7 +4,7 @@ licenselink = "https://github.com/bdronneau/materialize-cards/blob/master/LICENS
 description = "Theme based on http://materializecss.com/ oriented cards view"
 homepage = "https://github.com/bdronneau/materialize-cards/"
 tags = ["materializecss", "cards"]
-features = ["cards", "tags"]
+features = ["cards", "tags", "materialize design", "disqus", "google analytics"]
 min_version = 0.1
 
 [author]
