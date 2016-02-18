@@ -5,7 +5,7 @@
     <div class="col s12">
       <div class="card">
         <div class="card-image">
-          <img src="http://placehold.it/600x300.jpg">
+          {{ with .Params.image }}<img src="{{ . }}">{{ end }}
           <span class="card-title">{{ .Title }}</span>
         </div>
         <div class="card-content">
