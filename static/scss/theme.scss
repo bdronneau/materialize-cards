@@ -41,3 +41,17 @@ nav ul a:hover {
 .card .card-title {
   font-size: 20px;
 }
+
+.card .card-content p {
+  margin: 15px 0 15px 0;
+}
+
+.card .card-content-list p {
+  margin: 0;
+}
+
+.card-title-post {
+  background-color: rgba(50, 50, 50, 0.5);
+ -moz-border-radius: 20px 20px 20px 20px;
+ border-radius: 20px 20px 20px 20px; /* standards-compliant: (IE) */
+}
