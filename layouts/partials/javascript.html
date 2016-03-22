@@ -37,7 +37,7 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
     ga('create', {{ .Site.Params.googleAnalyticsId }}, 'auto');
-    ga('send', 'pageview');
+    ga('send', 'pageview', location.pathname);
   }
 
   function initComment() {
@@ -45,7 +45,7 @@
         return;
 
     var d = document, s = d.createElement('script');
-    s.src = 'https://ingloriouscoders.disqus.com/embed.js';
+    s.src = 'https://stashourcode.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
   }
