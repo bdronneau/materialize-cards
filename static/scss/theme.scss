@@ -8,6 +8,11 @@ body {
   flex-direction: column;
 }
 
+html {
+  font-family: "Roboto", sans serif;
+  font-weight: 200;
+}
+
 main {
   flex: 1 0 auto;
 }
@@ -44,6 +49,12 @@ nav ul a:hover {
 
 .card .card-content p {
   margin: 15px 0 15px 0;
+  font-size: 19px;
+}
+
+.card .card-content ul {
+  margin: 15px 0 15px 0;
+  font-size: 19px;
 }
 
 .card .card-content-list p {
