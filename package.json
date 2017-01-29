@@ -38,7 +38,7 @@
     "node": "4.2.x"
   },
   "dependencies": {
-    "materialize-css": "0.97.6"
+    "materialize-css": "0.98"
   },
   "devDependencies": {
     "csslint": "^0.10.0",
